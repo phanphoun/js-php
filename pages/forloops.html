@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>For Loops - JavaScripts-PHP</title>
+    <link rel="stylesheet" href="../css/main.css">
+    <link rel="stylesheet" href="../css/responsive.css">
+</head>
+
+<body>
+    <div class="content-wrapper">
+        <div class="back-link">
+            <a href="../index.html">← Back to Home</a>
+        </div>
+
+        <section class="page-content">
+            <div class="section-header">
+                <h1>🔄 For Loops</h1>
+            </div>
+
+            <div class="section-body">
+                <h2>What are For Loops?</h2>
+                <p>For loops allow you to repeat a block of code a specific number of times. They're perfect when you
+                    know exactly how many times you need to execute code.</p>
+
+                <h2>Basic For Loop Syntax</h2>
+                <div class="code-block">
+                    <pre><code>for (initialization; condition; increment) {
+    // Code to execute
+}</code></pre>
+                </div>
+
+                <h2>Basic For Loop Example</h2>
+                <div class="code-block">
+                    <pre><code>for (let i = 0; i < 5; i++) {
+    console.log("Iteration: " + i);
+}
+// Output: 
+// Iteration: 0
+// Iteration: 1
+// Iteration: 2
+// Iteration: 3
+// Iteration: 4</code></pre>
+                </div>
+
+                <h2>Loop Through Array</h2>
+                <div class="code-block">
+                    <pre><code>let fruits = ["apple", "banana", "orange", "grape"];
+
+for (let i = 0; i < fruits.length; i++) {
+    console.log(fruits[i]);
+}
+// Output:
+// apple
+// banana
+// orange
+// grape</code></pre>
+                </div>
+
+                <h2>Nested For Loops</h2>
+                <p>For loops inside for loops - useful for 2D arrays</p>
+                <div class="code-block">
+                    <pre><code>for (let i = 1; i <= 3; i++) {
+    for (let j = 1; j <= 3; j++) {
+        console.log(`${i} x ${j} = ${i * j}`);
+    }
+}
+// Prints multiplication table</code></pre>
+                </div>
+
+                <h2>PHP For Loop</h2>
+                <div class="code-block">
+                    <pre><code>&lt;?php
+for ($i = 0; $i < 5; $i++) {
+    echo "Iteration: " . $i . "&lt;br&gt;";
+}
+
+$fruits = ["apple", "banana", "orange"];
+for ($i = 0; $i < count($fruits); $i++) {
+    echo $fruits[$i] . "&lt;br&gt;";
+}
+?&gt;</code></pre>
+                </div>
+
+                <h2>Loop Components Explained</h2>
+                <ul class="content-list">
+                    <li><strong>Initialization:</strong> Set the starting value of the counter</li>
+                    <li><strong>Condition:</strong> Check if the loop should continue</li>
+                    <li><strong>Increment:</strong> Update the counter after each iteration</li>
+                </ul>
+
+                <h2>Loop Control Statements</h2>
+                <ul class="content-list">
+                    <li><strong>break:</strong> Exit the loop immediately</li>
+                    <li><strong>continue:</strong> Skip to the next iteration</li>
+                </ul>
+
+                <div class="code-block">
+                    <pre><code>// Using break
+for (let i = 0; i < 10; i++) {
+    if (i === 5) break;  // Stop at 5
+    console.log(i);
+}
+
+// Using continue
+for (let i = 0; i < 5; i++) {
+    if (i === 2) continue;  // Skip 2
+    console.log(i);
+}</code></pre>
+                </div>
+            </div>
+        </section>
+    </div>
+</body>
+
+</html>

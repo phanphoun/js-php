@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Variables - JavaScripts-PHP</title>
+    <link rel="stylesheet" href="../css/main.css">
+    <link rel="stylesheet" href="../css/responsive.css">
+</head>
+
+<body>
+    <div class="content-wrapper">
+        <div class="back-link">
+            <a href="../index.html">← Back to Home</a>
+        </div>
+
+        <section class="page-content">
+            <div class="section-header">
+                <h1>🔤 Variables</h1>
+            </div>
+
+            <div class="section-body">
+                <h2>What are Variables?</h2>
+                <p>Variables are containers for storing data values. Think of them as labeled boxes where you can store
+                    information to use later in your program.</p>
+
+                <h2>JavaScript Variables</h2>
+                <div class="code-block">
+                    <pre><code>var name = "John";      // Using var (older style)
+let age = 25;           // Using let (recommended)
+const city = "New York"; // Using const (cannot be changed)</code></pre>
+                </div>
+
+                <h2>PHP Variables</h2>
+                <div class="code-block">
+                    <pre><code>&lt;?php
+$name = "John";    // Variables start with $
+$age = 25;
+$city = "New York";
+?&gt;</code></pre>
+                </div>
+
+                <h2>Naming Rules</h2>
+                <ul class="content-list">
+                    <li>Must start with a letter or underscore (_)</li>
+                    <li>Can contain letters, numbers, and underscores</li>
+                    <li>Variable names are case-sensitive ($name and $Name are different)</li>
+                    <li>Use descriptive names (e.g., userName instead of u)</li>
+                    <li>Use camelCase in JavaScript (firstName, lastName)</li>
+                    <li>Use snake_case in PHP (first_name, last_name)</li>
+                </ul>
+
+                <h2>Variable Scope</h2>
+                <p><strong>Global Scope:</strong> Variables accessible everywhere in your code</p>
+                <p><strong>Local Scope:</strong> Variables only accessible within a function</p>
+                <div class="code-block">
+                    <pre><code>let globalVar = "I'm global";
+
+function myFunction() {
+    let localVar = "I'm local";
+    console.log(globalVar);  // Works
+    console.log(localVar);   // Works
+}
+
+console.log(globalVar);      // Works
+console.log(localVar);       // Error!</code></pre>
+                </div>
+            </div>
+        </section>
+    </div>
+</body>
+
+</html>

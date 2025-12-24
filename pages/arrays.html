@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arrays - JavaScripts-PHP</title>
+    <link rel="stylesheet" href="../css/main.css">
+    <link rel="stylesheet" href="../css/responsive.css">
+</head>
+
+<body>
+    <div class="content-wrapper">
+        <div class="back-link">
+            <a href="../index.html">← Back to Home</a>
+        </div>
+
+        <section class="page-content">
+            <div class="section-header">
+                <h1>🗂️ Arrays</h1>
+            </div>
+
+            <div class="section-body">
+                <h2>What are Arrays?</h2>
+                <p>Arrays are ordered collections of elements. They allow you to store multiple values in a single
+                    variable. Each element is accessed by its position (index), starting from 0.</p>
+
+                <h2>Creating Arrays</h2>
+                <div class="code-block">
+                    <h4>JavaScript</h4>
+                    <pre><code>let fruits = ["apple", "banana", "orange"];
+let numbers = [1, 2, 3, 4, 5];
+let mixed = [1, "hello", true, null, undefined];
+let empty = [];  // Empty array</code></pre>
+                </div>
+
+                <h2>Accessing Array Elements</h2>
+                <div class="code-block">
+                    <pre><code>let fruits = ["apple", "banana", "orange"];
+
+console.log(fruits[0]);      // Output: apple
+console.log(fruits[1]);      // Output: banana
+console.log(fruits.length);  // Output: 3
+console.log(fruits[10]);     // Output: undefined</code></pre>
+                </div>
+
+                <h2>Modifying Arrays</h2>
+                <div class="code-block">
+                    <pre><code>let fruits = ["apple", "banana"];
+
+fruits[0] = "grape";         // Change element
+console.log(fruits);         // ["grape", "banana"]
+
+fruits[2] = "orange";        // Add element
+console.log(fruits);         // ["grape", "banana", "orange"]</code></pre>
+                </div>
+
+                <h2>Array Methods - Adding/Removing</h2>
+                <div class="code-block">
+                    <pre><code>let fruits = ["apple", "banana"];
+
+fruits.push("orange");       // Add to end
+fruits.unshift("grape");     // Add to start
+fruits.pop();                // Remove from end
+fruits.shift();              // Remove from start
+fruits.splice(1, 1);         // Remove 1 element at index 1</code></pre>
+                </div>
+
+                <h2>Array Methods - Searching</h2>
+                <div class="code-block">
+                    <pre><code>let fruits = ["apple", "banana", "orange"];
+
+console.log(fruits.indexOf("banana"));    // Output: 1
+console.log(fruits.includes("apple"));    // Output: true
+console.log(fruits.find(f => f === "orange"));  // Output: orange</code></pre>
+                </div>
+
+                <h2>Array Methods - Transforming</h2>
+                <div class="code-block">
+                    <pre><code>let numbers = [1, 2, 3, 4, 5];
+
+// map() - transform each element
+let doubled = numbers.map(n => n * 2);
+console.log(doubled);        // [2, 4, 6, 8, 10]
+
+// filter() - keep elements that match
+let evens = numbers.filter(n => n % 2 === 0);
+console.log(evens);          // [2, 4]
+
+// reduce() - combine into single value
+let sum = numbers.reduce((total, n) => total + n, 0);
+console.log(sum);            // 15</code></pre>
+                </div>
+
+                <h2>Array Methods - Sorting & Joining</h2>
+                <div class="code-block">
+                    <pre><code>let fruits = ["cherry", "apple", "banana"];
+
+fruits.sort();               // Sort alphabetically
+console.log(fruits);         // ["apple", "banana", "cherry"]
+
+let reversed = fruits.reverse();
+console.log(reversed);       // ["cherry", "banana", "apple"]
+
+let text = fruits.join(", ");
+console.log(text);           // "cherry, banana, apple"</code></pre>
+                </div>
+
+                <h2>PHP Arrays</h2>
+                <div class="code-block">
+                    <pre><code>&lt;?php
+// Indexed array
+$fruits = ["apple", "banana", "orange"];
+echo $fruits[0];           // Output: apple
+
+// Associative array (like object)
+$person = [
+    "name" => "John",
+    "age" => 25,
+    "city" => "New York"
+];
+echo $person["name"];      // Output: John
+
+// Get array length
+echo count($fruits);       // Output: 3
+?&gt;</code></pre>
+                </div>
+
+                <h2>PHP Array Functions</h2>
+                <div class="code-block">
+                    <pre><code>&lt;?php
+$numbers = [1, 2, 3, 4, 5];
+
+array_push($numbers, 6);   // Add to end
+array_pop($numbers);        // Remove from end
+count($numbers);            // Get length
+in_array(3, $numbers);      // Check if exists
+array_reverse($numbers);    // Reverse array
+sort($numbers);             // Sort array
+?&gt;</code></pre>
+                </div>
+
+                <h2>Multidimensional Arrays</h2>
+                <div class="code-block">
+                    <pre><code>// 2D Array (array of arrays)
+let matrix = [
+    [1, 2, 3],
+    [4, 5, 6],
+    [7, 8, 9]
+];
+
+console.log(matrix[0]);      // [1, 2, 3]
+console.log(matrix[0][1]);   // 2
+
+// Array of objects
+let students = [
+    { name: "John", age: 20 },
+    { name: "Alice", age: 22 },
+    { name: "Bob", age: 21 }
+];
+
+console.log(students[0].name);  // John</code></pre>
+                </div>
+
+                <h2>Common Array Operations</h2>
+                <ul class="content-list">
+                    <li><strong>Length/Count:</strong> Get number of elements</li>
+                    <li><strong>Access:</strong> Get element at index</li>
+                    <li><strong>Add/Remove:</strong> Push, pop, shift, unshift</li>
+                    <li><strong>Search:</strong> indexOf, includes, find</li>
+                    <li><strong>Transform:</strong> map, filter, reduce</li>
+                    <li><strong>Sort/Join:</strong> sort, reverse, join</li>
+                </ul>
+            </div>
+        </section>
+    </div>
+</body>
+
+</html>

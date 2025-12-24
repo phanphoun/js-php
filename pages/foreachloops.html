@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Foreach Loops - JavaScripts-PHP</title>
+    <link rel="stylesheet" href="../css/main.css">
+    <link rel="stylesheet" href="../css/responsive.css">
+</head>
+
+<body>
+    <div class="content-wrapper">
+        <div class="back-link">
+            <a href="../index.html">← Back to Home</a>
+        </div>
+
+        <section class="page-content">
+            <div class="section-header">
+                <h1>📋 Foreach Loops</h1>
+            </div>
+
+            <div class="section-body">
+                <h2>What are Foreach Loops?</h2>
+                <p>Foreach loops are used to iterate through arrays. They're simpler and cleaner than traditional for
+                    loops when working with arrays because you don't need to manage an index.</p>
+
+                <h2>JavaScript forEach()</h2>
+                <div class="code-block">
+                    <pre><code>let fruits = ["apple", "banana", "orange"];
+
+fruits.forEach(function(fruit) {
+    console.log(fruit);
+});
+
+// With arrow function (ES6)
+fruits.forEach(fruit => {
+    console.log(fruit);
+});
+// Output:
+// apple
+// banana
+// orange</code></pre>
+                </div>
+
+                <h2>forEach with Index</h2>
+                <div class="code-block">
+                    <pre><code>let fruits = ["apple", "banana", "orange"];
+
+fruits.forEach((fruit, index) => {
+    console.log(index + ": " + fruit);
+});
+// Output:
+// 0: apple
+// 1: banana
+// 2: orange</code></pre>
+                </div>
+
+                <h2>JavaScript for...of Loop</h2>
+                <div class="code-block">
+                    <pre><code>let fruits = ["apple", "banana", "orange"];
+
+for (const fruit of fruits) {
+    console.log(fruit);
+}</code></pre>
+                </div>
+
+                <h2>JavaScript for...in Loop</h2>
+                <p>Gets the index/key (be careful with objects)</p>
+                <div class="code-block">
+                    <pre><code>let fruits = ["apple", "banana", "orange"];
+
+for (const index in fruits) {
+    console.log(index + ": " + fruits[index]);
+}</code></pre>
+                </div>
+
+                <h2>PHP Foreach Loop</h2>
+                <div class="code-block">
+                    <pre><code>&lt;?php
+$fruits = ["apple", "banana", "orange"];
+
+foreach ($fruits as $fruit) {
+    echo $fruit . "&lt;br&gt;";
+}
+?&gt;</code></pre>
+                </div>
+
+                <h2>PHP Foreach with Key-Value Pairs</h2>
+                <div class="code-block">
+                    <pre><code>&lt;?php
+$person = [
+    "name" => "John",
+    "age" => 25,
+    "city" => "New York"
+];
+
+foreach ($person as $key => $value) {
+    echo $key . ": " . $value . "&lt;br&gt;";
+}
+// Output:
+// name: John
+// age: 25
+// city: New York
+?&gt;</code></pre>
+                </div>
+
+                <h2>Comparing Loop Methods</h2>
+                <table class="comparison-table">
+                    <tr>
+                        <th>Method</th>
+                        <th>When to Use</th>
+                        <th>Pros</th>
+                    </tr>
+                    <tr>
+                        <td>for</td>
+                        <td>Known number of iterations</td>
+                        <td>Most flexible, works everywhere</td>
+                    </tr>
+                    <tr>
+                        <td>while</td>
+                        <td>Unknown iteration count</td>
+                        <td>Simple condition-based</td>
+                    </tr>
+                    <tr>
+                        <td>forEach</td>
+                        <td>Iterate through array</td>
+                        <td>Clean, no index management</td>
+                    </tr>
+                    <tr>
+                        <td>for...of</td>
+                        <td>Iterate through array values</td>
+                        <td>Modern, readable</td>
+                    </tr>
+                </table>
+
+                <h2>Array Methods That Use Loops</h2>
+                <div class="code-block">
+                    <pre><code>let numbers = [1, 2, 3, 4, 5];
+
+// map() - transform array
+let doubled = numbers.map(n => n * 2);
+
+// filter() - select elements
+let evens = numbers.filter(n => n % 2 === 0);
+
+// reduce() - combine into single value
+let sum = numbers.reduce((total, n) => total + n, 0);
+
+// find() - get first matching element
+let first3 = numbers.find(n => n > 3);</code></pre>
+                </div>
+            </div>
+        </section>
+    </div>
+</body>
+
+</html>

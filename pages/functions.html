@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Functions - JavaScripts-PHP</title>
+    <link rel="stylesheet" href="../css/main.css">
+    <link rel="stylesheet" href="../css/responsive.css">
+</head>
+
+<body>
+    <div class="content-wrapper">
+        <div class="back-link">
+            <a href="../index.html">← Back to Home</a>
+        </div>
+
+        <section class="page-content">
+            <div class="section-header">
+                <h1>⚙️ Functions</h1>
+            </div>
+
+            <div class="section-body">
+                <h2>What are Functions?</h2>
+                <p>Functions are reusable blocks of code that perform specific tasks. They help organize your code,
+                    eliminate repetition, and make programs easier to understand and maintain.</p>
+
+                <h2>Why Use Functions?</h2>
+                <ul class="content-list">
+                    <li>Reusability - Write once, use many times</li>
+                    <li>Organization - Break code into logical pieces</li>
+                    <li>Maintainability - Easier to update and debug</li>
+                    <li>Readability - Code is easier to understand</li>
+                </ul>
+
+                <h2>JavaScript Function Declaration</h2>
+                <div class="code-block">
+                    <pre><code>function greet(name) {
+    return "Hello, " + name + "!";
+}
+
+console.log(greet("John"));  // Output: Hello, John!</code></pre>
+                </div>
+
+                <h2>Function with Multiple Parameters</h2>
+                <div class="code-block">
+                    <pre><code>function add(a, b) {
+    return a + b;
+}
+
+console.log(add(5, 3));      // Output: 8
+console.log(add(10, 20));    // Output: 30</code></pre>
+                </div>
+
+                <h2>Arrow Functions (ES6)</h2>
+                <p>Modern way to write functions in JavaScript</p>
+                <div class="code-block">
+                    <pre><code>// Traditional
+const add = function(a, b) {
+    return a + b;
+};
+
+// Arrow function
+const add = (a, b) => {
+    return a + b;
+};
+
+// Shorthand (implicit return)
+const add = (a, b) => a + b;
+
+console.log(add(5, 3));      // Output: 8</code></pre>
+                </div>
+
+                <h2>Default Parameters</h2>
+                <div class="code-block">
+                    <pre><code>function greet(name = "Guest") {
+    return "Hello, " + name + "!";
+}
+
+console.log(greet());           // Hello, Guest!
+console.log(greet("Alice"));    // Hello, Alice!</code></pre>
+                </div>
+
+                <h2>PHP Function</h2>
+                <div class="code-block">
+                    <pre><code>&lt;?php
+function greet($name) {
+    return "Hello, " . $name . "!";
+}
+
+echo greet("John");  // Output: Hello, John!
+?&gt;</code></pre>
+                </div>
+
+                <h2>PHP Function with Default Parameter</h2>
+                <div class="code-block">
+                    <pre><code>&lt;?php
+function greet($name = "Guest") {
+    return "Hello, " . $name . "!";
+}
+
+echo greet();           // Hello, Guest!
+echo greet("Alice");    // Hello, Alice!
+?&gt;</code></pre>
+                </div>
+
+                <h2>Function Parameters vs Arguments</h2>
+                <ul class="content-list">
+                    <li><strong>Parameters:</strong> Variables in the function definition</li>
+                    <li><strong>Arguments:</strong> Values passed when calling the function</li>
+                </ul>
+
+                <h2>Return Values</h2>
+                <p>Functions can return values to be used in other parts of your program</p>
+                <div class="code-block">
+                    <pre><code>function calculateArea(width, height) {
+    let area = width * height;
+    return area;  // Return the result
+}
+
+let roomArea = calculateArea(10, 5);
+console.log(roomArea);  // Output: 50</code></pre>
+                </div>
+
+                <h2>Variable Scope in Functions</h2>
+                <div class="code-block">
+                    <pre><code>let globalVar = "I'm global";
+
+function myFunction() {
+    let localVar = "I'm local";
+    console.log(globalVar);  // Works (global scope)
+    console.log(localVar);   // Works (local scope)
+}
+
+console.log(globalVar);      // Works
+console.log(localVar);       // Error! (not accessible)</code></pre>
+                </div>
+
+                <h2>Anonymous Functions</h2>
+                <div class="code-block">
+                    <pre><code>// Function expression
+const multiply = function(a, b) {
+    return a * b;
+};
+
+console.log(multiply(4, 5));  // Output: 20
+
+// Used as callback
+setTimeout(function() {
+    console.log("This runs after 2 seconds");
+}, 2000);</code></pre>
+                </div>
+
+                <h2>Recursive Functions</h2>
+                <p>Functions that call themselves</p>
+                <div class="code-block">
+                    <pre><code>function factorial(n) {
+    if (n <= 1) {
+        return 1;
+    }
+    return n * factorial(n - 1);
+}
+
+console.log(factorial(5));  // Output: 120</code></pre>
+                </div>
+            </div>
+        </section>
+    </div>
+</body>
+
+</html>

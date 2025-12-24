@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>While Loops - JavaScripts-PHP</title>
+    <link rel="stylesheet" href="../css/main.css">
+    <link rel="stylesheet" href="../css/responsive.css">
+</head>
+
+<body>
+    <div class="content-wrapper">
+        <div class="back-link">
+            <a href="../index.html">← Back to Home</a>
+        </div>
+
+        <section class="page-content">
+            <div class="section-header">
+                <h1>⏳ While Loops</h1>
+            </div>
+
+            <div class="section-body">
+                <h2>What are While Loops?</h2>
+                <p>While loops repeat a block of code while a condition is true. They're useful when you don't know
+                    exactly how many times you need to execute the code.</p>
+
+                <h2>Basic While Loop</h2>
+                <div class="code-block">
+                    <pre><code>let i = 0;
+
+while (i < 5) {
+    console.log("Iteration: " + i);
+    i++;  // Don't forget to increment!
+}
+// Output:
+// Iteration: 0
+// Iteration: 1
+// Iteration: 2
+// Iteration: 3
+// Iteration: 4</code></pre>
+                </div>
+
+                <h2>While Loop Syntax</h2>
+                <div class="code-block">
+                    <pre><code>while (condition) {
+    // Code to execute while condition is true
+}</code></pre>
+                </div>
+
+                <h2>Do-While Loop</h2>
+                <p>Executes the code block at least once, then checks the condition</p>
+                <div class="code-block">
+                    <pre><code>let i = 0;
+
+do {
+    console.log("Iteration: " + i);
+    i++;
+} while (i < 5);  // Note the semicolon!</code></pre>
+                </div>
+
+                <h2>Real-World Example</h2>
+                <p>User input validation:</p>
+                <div class="code-block">
+                    <pre><code>let password = "";
+
+while (password.length < 8) {
+    password = prompt("Enter a password (at least 8 characters):");
+    if (password.length < 8) {
+        console.log("Password too short!");
+    }
+}
+console.log("Password accepted!");</code></pre>
+                </div>
+
+                <h2>PHP While Loop</h2>
+                <div class="code-block">
+                    <pre><code>&lt;?php
+$i = 0;
+
+while ($i < 5) {
+    echo "Iteration: " . $i . "&lt;br&gt;";
+    $i++;
+}
+
+// Do-while
+do {
+    echo "Iteration: " . $i . "&lt;br&gt;";
+    $i++;
+} while ($i < 10);
+?&gt;</code></pre>
+                </div>
+
+                <h2>Difference Between For and While</h2>
+                <ul class="content-list">
+                    <li><strong>For:</strong> Use when you know the exact number of iterations</li>
+                    <li><strong>While:</strong> Use when the number of iterations is unknown or depends on a condition
+                    </li>
+                </ul>
+
+                <h2>⚠️ Warning: Infinite Loops</h2>
+                <p>Always make sure the loop condition will eventually become false, or your program will hang!</p>
+                <div class="code-block">
+                    <pre><code>// WRONG - Infinite loop!
+while (true) {
+    console.log("This never stops");
+    // No way to exit
+}
+
+// CORRECT
+while (true) {
+    let input = prompt("Enter 'quit' to exit:");
+    if (input === "quit") break;
+}</code></pre>
+                </div>
+
+                <h2>Loop Control Statements</h2>
+                <ul class="content-list">
+                    <li><strong>break:</strong> Exit the loop immediately</li>
+                    <li><strong>continue:</strong> Skip to the next iteration</li>
+                </ul>
+            </div>
+        </section>
+    </div>
+</body>
+
+</html>

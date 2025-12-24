@@ -1,0 +1,282 @@
+/* ==================== Tablet (768px and below) ==================== */
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+        gap: 20px;
+        padding: 20px 15px;
+    }
+
+    .sidebar {
+        flex: 1;
+        position: static;
+    }
+
+    .header-content h1 {
+        font-size: 2rem;
+    }
+
+    .header-content p {
+        font-size: 1rem;
+    }
+
+    .nav-menu {
+        gap: 15px;
+        font-size: 0.9rem;
+    }
+
+    .welcome-section {
+        padding: 25px;
+    }
+
+    .welcome-section h2 {
+        font-size: 1.5rem;
+    }
+
+    .features {
+        grid-template-columns: 1fr;
+    }
+
+    .feature-card {
+        padding: 20px;
+    }
+
+    .feature-card h3 {
+        font-size: 1.1rem;
+    }
+
+    .section-header h1 {
+        font-size: 1.8rem;
+    }
+
+    .section-body {
+        padding: 25px;
+    }
+
+    .section-body h2 {
+        font-size: 1.4rem;
+    }
+
+    .section-body h3 {
+        font-size: 1.1rem;
+    }
+
+    .content-list li {
+        padding-left: 25px;
+        font-size: 0.95rem;
+    }
+
+    .code-block {
+        padding: 15px;
+        margin: 15px 0;
+    }
+
+    .code-block code {
+        font-size: 0.85rem;
+    }
+
+    .comparison-table th,
+    .comparison-table td {
+        padding: 10px 12px;
+        font-size: 0.9rem;
+    }
+}
+
+/* ==================== Mobile (480px and below) ==================== */
+@media (max-width: 480px) {
+    body {
+        font-size: 14px;
+    }
+
+    .navbar {
+        flex-direction: column;
+        gap: 15px;
+        padding: 10px 15px;
+    }
+
+    .nav-menu {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 10px;
+    }
+
+    .nav-menu a {
+        font-size: 0.9rem;
+    }
+
+    .header {
+        padding: 40px 15px;
+    }
+
+    .header-content h1 {
+        font-size: 1.5rem;
+        margin-bottom: 8px;
+    }
+
+    .header-content p {
+        font-size: 0.9rem;
+    }
+
+    .container {
+        gap: 15px;
+        padding: 15px 10px;
+    }
+
+    .sidebar {
+        padding: 15px;
+    }
+
+    .sidebar-header h3 {
+        font-size: 1.1rem;
+    }
+
+    .nav-item {
+        padding: 10px 12px;
+        font-size: 0.95rem;
+        margin-bottom: 4px;
+    }
+
+    .welcome-section {
+        padding: 20px;
+    }
+
+    .welcome-section h2 {
+        font-size: 1.3rem;
+    }
+
+    .welcome-section p {
+        font-size: 1rem;
+    }
+
+    .feature-card {
+        padding: 15px;
+    }
+
+    .feature-card h3 {
+        font-size: 1rem;
+        margin-bottom: 10px;
+    }
+
+    .feature-card p {
+        font-size: 0.95rem;
+    }
+
+    .footer {
+        padding: 20px 15px;
+        margin-top: 40px;
+    }
+
+    .footer p {
+        font-size: 0.9rem;
+    }
+
+    /* Page Content */
+    .content-wrapper {
+        padding: 20px 10px;
+    }
+
+    .page-content {
+        border-radius: 4px;
+    }
+
+    .section-header {
+        padding: 25px 15px;
+    }
+
+    .section-header h1 {
+        font-size: 1.5rem;
+    }
+
+    .section-body {
+        padding: 20px 15px;
+    }
+
+    .section-body h2 {
+        font-size: 1.2rem;
+        margin-top: 20px;
+        margin-bottom: 12px;
+    }
+
+    .section-body h3 {
+        font-size: 1rem;
+        margin-top: 15px;
+    }
+
+    .section-body h4 {
+        font-size: 0.95rem;
+    }
+
+    .section-body p {
+        font-size: 0.95rem;
+        margin-bottom: 12px;
+    }
+
+    .content-list {
+        margin: 12px 0;
+    }
+
+    .content-list li {
+        padding: 8px 0;
+        padding-left: 22px;
+        font-size: 0.95rem;
+    }
+
+    .code-block {
+        padding: 12px;
+        margin: 12px 0;
+        border-radius: 3px;
+    }
+
+    .code-block h4 {
+        font-size: 0.9rem;
+        margin-bottom: 8px;
+    }
+
+    .code-block code {
+        font-size: 0.8rem;
+        line-height: 1.4;
+    }
+
+    .comparison-table {
+        margin: 15px 0;
+        font-size: 0.85rem;
+    }
+
+    .comparison-table th {
+        padding: 10px 8px;
+    }
+
+    .comparison-table td {
+        padding: 8px 8px;
+    }
+
+    .back-link {
+        margin-bottom: 20px;
+    }
+
+    .back-link a {
+        font-size: 0.95rem;
+    }
+}
+
+/* ==================== Extra Small (360px and below) ==================== */
+@media (max-width: 360px) {
+    .header-content h1 {
+        font-size: 1.3rem;
+    }
+
+    .nav-brand {
+        font-size: 1.2rem;
+    }
+
+    .section-header h1 {
+        font-size: 1.3rem;
+    }
+
+    .section-body h2 {
+        font-size: 1.1rem;
+    }
+
+    .code-block code {
+        font-size: 0.75rem;
+    }
+}

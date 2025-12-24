@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Data Types - JavaScripts-PHP</title>
+    <link rel="stylesheet" href="../css/main.css">
+    <link rel="stylesheet" href="../css/responsive.css">
+</head>
+
+<body>
+    <div class="content-wrapper">
+        <div class="back-link">
+            <a href="../index.html">← Back to Home</a>
+        </div>
+
+        <section class="page-content">
+            <div class="section-header">
+                <h1>📊 Data Types</h1>
+            </div>
+
+            <div class="section-body">
+                <h2>Common Data Types</h2>
+
+                <h3>1. String</h3>
+                <p>Text enclosed in quotes - can be single, double, or backticks</p>
+                <div class="code-block">
+                    <pre><code>let message = "Hello";           // Double quotes
+let greeting = 'Hi there';       // Single quotes
+let template = `Hello ${name}`;  // Template literal (JavaScript)</code></pre>
+                </div>
+
+                <h3>2. Number</h3>
+                <p>Both integers and decimals are the same data type in JavaScript</p>
+                <div class="code-block">
+                    <pre><code>let age = 25;           // Integer
+let price = 19.99;      // Float/Decimal
+let negative = -100;    // Negative number</code></pre>
+                </div>
+
+                <h3>3. Boolean</h3>
+                <p>True or False - used for conditional logic</p>
+                <div class="code-block">
+                    <pre><code>let isActive = true;
+let hasError = false;
+let isAdult = age >= 18;  // Result of comparison</code></pre>
+                </div>
+
+                <h3>4. Null and Undefined</h3>
+                <p>Special values representing "no value"</p>
+                <div class="code-block">
+                    <pre><code>let empty = null;       // Intentionally empty
+let notSet;             // Undefined (no value assigned)</code></pre>
+                </div>
+
+                <h3>5. Array</h3>
+                <p>Collection of values, accessed by index (position)</p>
+                <div class="code-block">
+                    <pre><code>let fruits = ["apple", "banana", "orange"];
+let numbers = [1, 2, 3, 4, 5];
+let mixed = [1, "hello", true, null];  // Mixed types</code></pre>
+                </div>
+
+                <h3>6. Object</h3>
+                <p>Collection of key-value pairs</p>
+                <div class="code-block">
+                    <pre><code>let person = {
+    name: "John",
+    age: 25,
+    city: "New York",
+    isStudent: true
+};
+
+console.log(person.name);      // "John"
+console.log(person["age"]);    // 25</code></pre>
+                </div>
+
+                <h2>PHP Data Types</h2>
+                <div class="code-block">
+                    <pre><code>&lt;?php
+$string = "Hello";           // String
+$integer = 42;               // Integer
+$float = 3.14;               // Float
+$boolean = true;             // Boolean
+$array = ["a", "b", "c"];    // Array
+$null = null;                // Null
+?&gt;</code></pre>
+                </div>
+
+                <h2>Type Checking</h2>
+                <div class="code-block">
+                    <pre><code>// JavaScript
+console.log(typeof "hello");        // "string"
+console.log(typeof 42);             // "number"
+console.log(typeof true);           // "boolean"
+console.log(typeof [1,2,3]);        // "object"</code></pre>
+                </div>
+            </div>
+        </section>
+    </div>
+</body>
+
+</html>

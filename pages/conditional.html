@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conditional Statements - JavaScripts-PHP</title>
+    <link rel="stylesheet" href="../css/main.css">
+    <link rel="stylesheet" href="../css/responsive.css">
+</head>
+
+<body>
+    <div class="content-wrapper">
+        <div class="back-link">
+            <a href="../index.html">← Back to Home</a>
+        </div>
+
+        <section class="page-content">
+            <div class="section-header">
+                <h1>❓ Conditional Statements</h1>
+            </div>
+
+            <div class="section-body">
+                <h2>What are Conditionals?</h2>
+                <p>Conditional statements allow you to execute different code based on different conditions. They're the
+                    foundation of logical decision-making in programs.</p>
+
+                <h2>If Statement</h2>
+                <div class="code-block">
+                    <pre><code>let age = 18;
+
+if (age >= 18) {
+    console.log("You are an adult");
+} else {
+    console.log("You are a minor");
+}</code></pre>
+                </div>
+
+                <h2>If-Else If-Else</h2>
+                <div class="code-block">
+                    <pre><code>let score = 85;
+
+if (score >= 90) {
+    console.log("Grade: A");
+} else if (score >= 80) {
+    console.log("Grade: B");
+} else if (score >= 70) {
+    console.log("Grade: C");
+} else if (score >= 60) {
+    console.log("Grade: D");
+} else {
+    console.log("Grade: F");
+}</code></pre>
+                </div>
+
+                <h2>Comparison Operators</h2>
+                <ul class="content-list">
+                    <li><code>==</code> Equal to (loose comparison)</li>
+                    <li><code>===</code> Equal to (strict comparison)</li>
+                    <li><code>!=</code> Not equal to</li>
+                    <li><code>&lt;</code> Less than</li>
+                    <li><code>&gt;</code> Greater than</li>
+                    <li><code>&lt;=</code> Less than or equal to</li>
+                    <li><code>&gt;=</code> Greater than or equal to</li>
+                </ul>
+
+                <h2>Logical Operators</h2>
+                <ul class="content-list">
+                    <li><code>&amp;&amp;</code> AND - both conditions must be true</li>
+                    <li><code>||</code> OR - at least one condition must be true</li>
+                    <li><code>!</code> NOT - reverses the condition</li>
+                </ul>
+
+                <div class="code-block">
+                    <pre><code>let age = 25;
+let hasLicense = true;
+
+if (age >= 18 && hasLicense) {
+    console.log("You can drive");
+}
+
+if (age < 13 || age > 65) {
+    console.log("Special pricing applies");
+}</code></pre>
+                </div>
+
+                <h2>Switch Statement</h2>
+                <div class="code-block">
+                    <pre><code>let day = 3;
+
+switch (day) {
+    case 1:
+        console.log("Monday");
+        break;
+    case 2:
+        console.log("Tuesday");
+        break;
+    case 3:
+        console.log("Wednesday");
+        break;
+    case 4:
+        console.log("Thursday");
+        break;
+    default:
+        console.log("Invalid day");
+}</code></pre>
+                </div>
+
+                <h2>Ternary Operator</h2>
+                <p>A shorthand way to write if-else statements</p>
+                <div class="code-block">
+                    <pre><code>let age = 18;
+let status = (age >= 18) ? "Adult" : "Minor";
+console.log(status);  // "Adult"</code></pre>
+                </div>
+            </div>
+        </section>
+    </div>
+</body>
+
+</html>
